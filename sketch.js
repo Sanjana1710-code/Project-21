@@ -4,6 +4,8 @@ var music;
 var s1,s2,s3,s4;
 var box;
 
+var edges;
+
 function preload(){
     music = loadSound("music.mp3");
 }
@@ -49,7 +51,7 @@ function draw() {
     }
 
     //create edgeSprite
-   createEdgeSprites();
+  edges = createEdgeSprites();
    box.bounceOff(edges);
    box.bounceOff(s1);
    box.bounceOff(s2);
